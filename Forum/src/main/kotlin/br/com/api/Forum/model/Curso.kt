@@ -1,7 +1,14 @@
 package br.com.api.Forum.model
 
+import jakarta.persistence.Entity
+import jakarta.persistence.GeneratedValue
+import jakarta.persistence.GenerationType
+import jakarta.persistence.Id
+
+@Entity
 data class Curso(
-    val id: Long? = null,
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    val id: Long,
     val nome: String,
     val categoria: String
 )
