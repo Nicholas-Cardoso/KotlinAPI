@@ -108,7 +108,7 @@
                 <configuration>
                     <url>jdbc:mysql://linuxfps.mysql.database.azure.com/forum</url>
                     <user>linuxfps</user>
-                    <password>Nino,caranft54</password>
+                    <password></password>
                 </configuration>
                 <dependencies>
                     <dependency>
