@@ -1,9 +1,9 @@
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/forum
-    username: root
-    password: 
+    url: jdbc:mysql://linuxfps.mysql.database.azure.com/forum
+    username: linuxfps
+    password: Nino,caranft54
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true

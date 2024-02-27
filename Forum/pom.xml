@@ -106,8 +106,8 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>10.0.0</version>
                 <configuration>
-                    <url>jdbc:mysql://localhost:3306/forum</url>
-                    <user>root</user>
+                    <url>jdbc:mysql://linuxfps.mysql.database.azure.com/forum</url>
+                    <user>linuxfps</user>
                     <password>Nino,caranft54</password>
                 </configuration>
                 <dependencies>

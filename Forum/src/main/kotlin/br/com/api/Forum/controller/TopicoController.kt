@@ -23,7 +23,7 @@ class TopicoController(private val service: TopicoService) {
     @GetMapping
     @Cacheable("topicos")
     fun listTopico(
-            @RequestParam(required = false) cursoName: String?,
+            @RequestParam(required = false) cursoName: String?,¹
             pagination: Pageable
             ): Page<TopicoView> {
         return service.listTopico(cursoName, pagination)
