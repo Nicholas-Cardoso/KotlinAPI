@@ -3,7 +3,7 @@ spring:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://linuxfps.mysql.database.azure.com/forum
     username: linuxfps
-    password: Nino,caranft54
+    password: 
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
