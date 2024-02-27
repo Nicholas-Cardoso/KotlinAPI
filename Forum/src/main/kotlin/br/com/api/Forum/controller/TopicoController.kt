@@ -23,12 +23,13 @@ class TopicoController(private val service: TopicoService) {
     @GetMapping
     @Cacheable("topicos")
     fun listTopico(
-            @RequestParam(required = false) cursoName: String?,¹
+            @RequestParam(required = false) cursoName: String?,
             pagination: Pageable
             ): Page<TopicoView> {
         return service.listTopico(cursoName, pagination)
     }
 
+    @GetMapping("/{id}")
     @CacheEvict(value = ["topicos"], allEntries = true)
     fun findById(@PathVariable id: Long): TopicoView {
         return service.findById(id)
