@@ -2,12 +2,12 @@ spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://linuxfps.mysql.database.azure.com/forum
-    username: linuxfps
-    password: 
+    username:
+    password:
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
-    properties:
-      hibernate:
-        show-sql: true
-        format_sql: true
+  properties:
+    hibernate:
+      show-sql: true
+      format_sql: true
